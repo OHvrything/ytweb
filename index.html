@@ -21,24 +21,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <style>
   body, html {text-align: center;background:#FFAB00;}
-html.dark {
-  background: #121212;
-  color: #bbb;
-}
-
-html.dark a {
-  color: #3ea6ff;
-}
   </style>
-<script>
-if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    document.documentElement.classList.add("dark")
-}
-
-document.getElementById("toggleTheme").addEventListener("click",() => {
-  document.documentElement.classList.toggle("dark")
-})
-</script>
 </head>
 <body>
 
@@ -55,7 +38,6 @@ document.getElementById("toggleTheme").addEventListener("click",() => {
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="javascript:home()">홈</a></li>
-        <li><a><button id="toggleTheme">다크모드 ON/OFF</button></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="javascript:yt()"><span class="glyphicon glyphicon-facetime-video"></span> 유튜브</a></li>
